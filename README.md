@@ -32,3 +32,26 @@ $ cd books
  $ mkdocs serve
  ```
  Serving on http://127.0.0.1:8000/
+
+ ### theme
+
+`$ pip3 install mkdocs-material`
+
+yml
+
+```js
+theme:
+  name: material
+  custom_dir: overrides
+  palette:
+    primary: indigo
+    accent: pink
+  font:
+    text: Roboto
+    code: Roboto Mono
+```
+
+在專案根目錄下建立overrides資料夾，並在其中新增自訂的HTML/CSS/JS 檔案。例如：
+
+`overrides/main.html`用於自訂模板。  
+`overrides/extra.css`用於自訂樣式。  
